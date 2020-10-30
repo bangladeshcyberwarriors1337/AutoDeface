@@ -7,13 +7,14 @@ try:
 except ImportError:
    exit("install requests and try again ...")
 
-banner = """ _____    _____   _              _
-|  __ \  /  ___| \ \            / /
-| |__| | | /      \ \          / /
-| ___ /  | |       \ \        / /
-|  __ \  | |     |  \ \  /\  / /
-| |__| | | \___  |   \ \//\\/ /
-|_____/  \_____| |    \_/  \_/"""
+banner = """____    ____  __        __ 
+|  _ \  /  __\ \ \      / / 
+| |_)/  | /     \ \ /\ / / 
+| |_)\  | \__    \ V  V / 
+|____/  \____\    \_/\_/ 
+~[Bamgladesh Cyber Warriors]~
+~{Coded By Athro Haque}~
+Thanks To all the member of BCW and Black_Phish"""
 
 b = '\033[31m'
 h = '\033[32m'
